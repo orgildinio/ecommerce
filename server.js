@@ -12,11 +12,13 @@ server.listen(PORT, () => {
 })
 
 // WebSocket ursgal neeh
+// io.on hvleen awna 
 const basket = io.on('connection', (socket) => {
   console.log('a user connected');
 
   // Tulburiin medeelel huleej avah ursgal
   socket.on('invoice', (paid) => {
+    //emiy ilgeene  
     socket.emit('message', 'Connection Started')
   })
 })
