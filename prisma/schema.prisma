@@ -14,6 +14,7 @@ model Invoice {
   id     Int @id @default(autoincrement())
   amount Float
   verified Boolean @default(false)
+  qpay String?
 }
 
 model Token {
