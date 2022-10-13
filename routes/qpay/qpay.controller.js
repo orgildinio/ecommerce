@@ -53,7 +53,7 @@ export const createInvoice = async (req, res) => {
       invoice_code: 'TAPPAY_INVOICE',
       sender_invoice_no: invoice.id.toString() + 'qpay',
       invoice_receiver_code: 'terminal',
-      invoice_description: 'test',
+      invoice_description: 'vulcan_analystics',
       amount: req.body.amount,
       callback_url: 'http://vulcan.mn/qpay/' + invoice.id
     }
